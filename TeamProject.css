@@ -1,0 +1,185 @@
+@font-face {
+    font-family: HanSans;
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/NotoSansKR-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: HanSans;
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/NotoSansKR-Bold.ttf') format('truetype');
+}
+
+.title {
+    font-family: 'Han Sans', '본고딕', sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.select-location-table {
+    text-align: center;
+}
+
+.notice {
+    background-color: rgb(255, 109, 93);
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notice-p {
+    font-family: 'Han Sans', '본고딕', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px; /* 상하 간격을 10px로 지정 */
+    line-height: 1.5; /* 줄 간격을 1.5로 지정 */
+    flex: 1;
+}
+
+.button {
+    margin-right: 50px;
+    width: 125px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: rgb(230, 230, 230);
+}
+
+.button a {
+    font-family: 'Han Sans', '본고딕', sans-serif;
+    font-size: 18px;
+    color: rgb(131, 131, 131);
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    /* margin-left: -80%; */
+}
+
+.location-title {
+    font-family: 'Han Sans', '본고딕', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.location-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 42px;
+    border-radius: 4px;
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset;
+    background-color: rgb(255, 255, 255);
+    line-height: 40px;
+    font-family: Arial;
+}
+
+.location-select:hover {
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+}
+
+table.GeneratedTable {
+    overflow: scroll;
+    white-space: nowrap;
+    width: 100px;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+    color: #000000;
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+    padding: 3px;
+}
+
+table.GeneratedTable {
+    margin-left: auto; /* 변경된 부분 */
+    margin-right: auto; /* 변경된 부분 */
+    text-align: center;
+}
+
+.master-title{
+    font-size: 30px;
+    color: #fff;
+}
+
+.footer {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer .master-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .notice {
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .button {
+        margin-top: 10px;
+    }
+    .location {
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: auto;
+    }
+    .scrollable-table {
+        width: 100%;
+        overflow: scroll;
+    }
+    .select-location-table {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: auto;
+    }
+}
+
